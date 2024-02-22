@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 .container{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: relative;
     background: url(background.png);
@@ -27,15 +27,15 @@
     transform: translateY(-50px);
 }
 .container .box{
-    height: 86vh;
-    width: 75%;
+    height: 100%;
+    width: 100%;
     padding: 0 20px;
     background: rgba(255, 255, 255, 0.1);
     z-index: 10;
     display: flex;
     position: relative;
     border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.7);
+    border: 4px solid rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(25px);
     box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
 }
@@ -147,16 +147,12 @@
 }
 
 .about .content p{
-    width:1000px;
-    height:10px;
-    margin:170px 180px;
-padding:20px 15px;
+  text-align: center;
 position:relative;
     display:flex;
     text-align:center;
     justify-content: center;
     transition:0.3s ease-in-out;
-    margin-top:5%;
 }
 .line-space{
     text-align: center;
@@ -482,11 +478,6 @@ textarea.input {
   opacity: 0.3;
 }
 
-@media (max-width: 850px) {
-  .form {
-    grid-template-columns: 1fr;
-  }
-
   .square {
     transform: translate(140%, 43%);
     height: 350px;
@@ -499,22 +490,6 @@ textarea.input {
   .social-media {
     padding: 1.5rem 0 0 0;
   }
-}
-
-@media (max-width: 768px) {
-  .container {
-      padding: 10px;
-  }
-
-  .box {
-      border-radius: 5px;
-  }
-}
-@media (min-width: 768px) {
-  .box {
-      padding: 40px;
-  }
-}
   form,
   .contact-info {
     padding: 1.7rem 1.6rem;

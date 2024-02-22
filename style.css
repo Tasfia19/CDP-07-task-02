@@ -501,12 +501,20 @@ textarea.input {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .container {
-    padding: 1.5rem;
+      padding: 10px;
   }
 
-
+  .box {
+      border-radius: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .box {
+      padding: 40px;
+  }
+}
   form,
   .contact-info {
     padding: 1.7rem 1.6rem;
@@ -539,4 +547,3 @@ textarea.input {
   .btn {
     padding: 0.45rem 1.2rem;
   }
-}
